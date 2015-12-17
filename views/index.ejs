@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<table>
+    <tr>
+        <td>Users /n
+            <% for (var i = 0; i < 5; i++){ %>
+            <%= user.name(i) %>
+            <% } %>
+        </td>
+        <td>Teashers</td>
+        <td>Courses</td>
+    </tr>
+</table>
+</body>
+</html>
